@@ -77,5 +77,5 @@ To lint files run `yarn lint:fix`
 
 ### Minimalist example 
 navigate to `./example` directory containing the minimalist example
-install dependencies by running `npm instal`
+install dependencies by running `yarn instal`
 run the code with `node index.js`
