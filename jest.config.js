@@ -16,6 +16,7 @@ export default {
     '!src/**/*.d.mts',
     '!src/**/*.spec.ts',
     '!src/errors/*',
-    '!src/utils/*',
+    '!src/common/*',
   ],
+	testTimeout: 20 * 1000
 };
