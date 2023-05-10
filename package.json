@@ -1,14 +1,28 @@
 {
-  "name": "alon_mota-sdk",
+  "name": "@alonmota/alon_mota-sdk",
   "version": "0.0.0",
   "description": "Liblab Take home project - The Lord of the Rings SDK",
   "type": "module",
   "engines": {
     "node": ">= 18.12 <19"
   },
+  "main": "build/main.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./build/src/main.js",
+        "require": "./build/src/main.js"
+      },
+      "./build/index.cjs"
+    ]
+  },
   "author": "Alon Mota <alon.mota.l@gmail.com>",
   "license": "MIT",
   "private": false,
+  "repository": "https://github.com/alonmota/alon_mota-SDK.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "start": "node build/src/main.js",
     "test": "jest --coverage",
@@ -16,11 +30,13 @@
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -w -p tsconfig.json",
     "build:release": "tsc -p tsconfig.release.json --build --clean",
+    "doc": "npm run build && jsdoc -r ./build/ -d ./docs",
     "lint": "eslint . --ext .ts --ext .mts",
     "lint:fix": "eslint . --ext .ts --ext .mts --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "test:watch": "jest --watch",
+    "prepare": "husky install",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
@@ -39,8 +55,11 @@
     "jest": "~29.5",
     "jsdoc": "^4.0.2",
     "lint-staged": "^13.2.2",
+    "pinst": "^3.0.0",
     "prettier": "~2.8",
     "ts-jest": "~29.1",
+    "ts-loader": "^9.4.2",
+    "typedoc": "^0.24.7",
     "typescript": "~5.0"
   },
   "dependencies": {

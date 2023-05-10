@@ -9,6 +9,12 @@ export default {
   },
   testRegex: '(\\.|/)(test|spec)\\.(m)?ts$',
   coverageDirectory: 'coverage',
+	collectCoverage: true,
+	coverageThreshold: {
+		global: {
+			lines: 90,
+		},
+	},
   collectCoverageFrom: [
     'src/**/*.ts',
     'src/**/*.mts',
