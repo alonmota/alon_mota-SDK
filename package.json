@@ -1,6 +1,6 @@
 {
   "name": "@alonmota/alon_mota-sdk",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Liblab Take home project - The Lord of the Rings SDK",
   "type": "module",
   "engines": {
