@@ -28,7 +28,7 @@ describe('QuotesClient', () => {
 			const response = await client.getAll();
 			expect(mockAxios).toHaveBeenCalledTimes(1);
 			expect(mockAxios).toHaveBeenCalledWith('quote');
-			expect(response.data.docs).toHaveLength(3);
+			expect(response.docs).toHaveLength(3);
 		});
 
 		it('Should accept page option', async () => {

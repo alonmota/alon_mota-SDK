@@ -24,7 +24,6 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "start": "node build/src/main.js",
     "test": "jest --coverage",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.json",
