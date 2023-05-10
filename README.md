@@ -76,6 +76,7 @@ To generate the jsdoc run `yarn doc`
 To lint files run `yarn lint:fix`
 
 ### Minimalist example 
-navigate to `./example` directory containing the minimalist example
-install dependencies by running `yarn instal`
-run the code with `node index.js`
+- navigate to `./example` directory containing the minimalist example
+- install dependencies by running `yarn instal`
+- Add your token from login at https://the-one-api.dev/login on line 5 of index.js
+- run the code with `node index.js`
