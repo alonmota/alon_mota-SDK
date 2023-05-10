@@ -1,0 +1,10 @@
+{
+  "name": "usage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@alonmota/alon_mota-sdk": "^0.1.0"
+  }
+}

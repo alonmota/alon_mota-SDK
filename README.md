@@ -33,11 +33,6 @@ After defining the GIT_AUTH_TOKEN variable create a file `.npmrc` in the root fo
 Also make sure your code supports modules by adding `"type": "module"` to your package.json
 
 ### Install the package 
-using npm
-```sh
-npm install --save @alonmota/alon_mota-sdk
-```
-
 using yarn 
 ```sh
 yarn add @alonmota/alon_mota-sdk
